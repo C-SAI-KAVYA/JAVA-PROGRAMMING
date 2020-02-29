@@ -43,5 +43,5 @@ public class BankingCashCounter {
 			logger.error(uose);
 		}
 
-	}
+}
 }
