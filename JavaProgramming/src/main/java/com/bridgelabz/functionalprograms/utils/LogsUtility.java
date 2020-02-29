@@ -10,7 +10,6 @@ public class LogsUtility {
 	public static final String FILEPATH = "F:\\BridgeLabzFellowship\\JavaProgramming\\logs\\";
 	public static final String CONFIGPATH = "F:\\BridgeLabzFellowship\\JavaProgramming\\loggers\\log4j.properties";
 	private static Logger logger;
-	
 	public static Logger getLog() {
 		return logger;
 	}
