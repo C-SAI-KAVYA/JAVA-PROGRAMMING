@@ -86,7 +86,6 @@ public class Utility {
 	/**
 	 * accepts any random year entered from the user prints whether the entered year
 	 * is a leap year or not
-	 *
 	 * @param year
 	 * @return
 	 */
