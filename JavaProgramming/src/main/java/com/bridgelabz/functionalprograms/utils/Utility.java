@@ -8,7 +8,6 @@ import com.bridgelabz.exceptions.LessThanOrGreaterThanSpecifiedRangeException;
 import com.bridgelabz.exceptions.UnsupportedValuesForEuclideanDistanceCalculationException;
 
 public class Utility {
-
 	private Utility() {
 
 	}
