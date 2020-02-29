@@ -34,5 +34,4 @@ public class BinarySearchTreeTester {
 		
 		logger.info(tree.numberOfBst(root).bst+" number of sub binary trees are present in a binary tree");
 	}
-
 }
