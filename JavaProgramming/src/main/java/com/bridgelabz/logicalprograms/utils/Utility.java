@@ -3,7 +3,6 @@ package com.bridgelabz.logicalprograms.utils;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
-
 import com.bridgelabz.errors.UnspecifiedOptionSelectedError;
 import com.bridgelabz.exceptions.InvalidIntegerException;
 import com.bridgelabz.exceptions.NumberNotInRequiredFormatOrSizeException;
