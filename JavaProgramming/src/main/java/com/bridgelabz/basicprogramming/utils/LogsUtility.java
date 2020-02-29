@@ -16,5 +16,5 @@ public class LogsUtility {
 	}
 	public static void setLog(String className) {
 		LogsUtility.logger = Logger.getLogger(className);
-	}
+}
 }
