@@ -19,7 +19,7 @@ public class TestGenericInsertionSort {
 		Integer[] expectedArray = {12, 34, 56, 78, 101};
 		Integer[] inputArray = {101, 34, 78, 56, 12};
 		assertArrayEquals(expectedArray, Utility.genericInsertionSortA(inputArray));
-	}
+}
 	
 	@Test
 	public void testInsertionSortGeneric_ArraySortedInDescendingOrder_IntegerArray() throws ArrayLengthDoesNotSatisfyTheRequiredLengthException {
