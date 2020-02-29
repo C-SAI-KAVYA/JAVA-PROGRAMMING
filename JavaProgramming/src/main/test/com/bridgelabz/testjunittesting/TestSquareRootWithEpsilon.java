@@ -28,5 +28,4 @@ public class TestSquareRootWithEpsilon {
 	public void testSquareRootWithEpsilon_12point041594578792296_145() throws NegativeOrZeroNumberFoundException {
 		assertEquals(12.041594578792296,Utility.sqrt(145),Math.E);
 	}
-	
 }
