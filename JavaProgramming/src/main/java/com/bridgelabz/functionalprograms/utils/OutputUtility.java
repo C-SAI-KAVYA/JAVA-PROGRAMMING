@@ -5,8 +5,7 @@ import org.apache.log4j.Logger;
 
 public class OutputUtility {
 	
-	private OutputUtility() {
-		
+	private OutputUtility() {	
 	}
 	//print primitive data types
 	/**
