@@ -29,5 +29,5 @@ public class TestBinaryWordSearch {
 		String content = InputUtility.readFileToString("F:\\BridgeLabzFellowship\\JavaProgramming\\textfiles\\BinaryWordSearch.txt");
 		String[] words = content.split("\\s+");
 		assertTrue(Utility.binaryWordsearch("Cherry", words) < 0);// if less than zero the value is not found
-	}
+}
 }
