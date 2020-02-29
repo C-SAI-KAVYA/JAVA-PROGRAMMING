@@ -9,7 +9,6 @@ import com.bridgelabz.junittesting.utils.InputUtility;
 import com.bridgelabz.junittesting.utils.Utility;
 
 public class Binary {
-
 	public static void main(String[] args) {
 		LogsUtility.setLog("Binary");
 		Logger logger = LogsUtility.getLog();
