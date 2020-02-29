@@ -65,4 +65,3 @@ public class Stopwatch {
 //	        System.out.printf("%e (%.2f seconds)\n", sum2, time2);
 //	    }
 	} 
-
