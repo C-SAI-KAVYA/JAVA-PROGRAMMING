@@ -20,7 +20,6 @@ public class TwoDArray {
 		logger.info("Enter Number of rows and columns you want in your 2D array");
 		int rows = InputUtility.intVal();
 		int columns = InputUtility.intVal();
-
 		logger.info(
 				"Select from the following list which primitive data type would you like to choose for your 2D array");
 		logger.info("byte");
