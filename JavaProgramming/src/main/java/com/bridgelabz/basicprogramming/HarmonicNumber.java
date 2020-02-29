@@ -23,6 +23,6 @@ public class HarmonicNumber {
 		double nthHarmonicValue = Utility.harmonicNumber(nthNumber);
 		
 		logger.info("The nth harmonic value is "+ nthHarmonicValue);
-	}
+}
 
 }
