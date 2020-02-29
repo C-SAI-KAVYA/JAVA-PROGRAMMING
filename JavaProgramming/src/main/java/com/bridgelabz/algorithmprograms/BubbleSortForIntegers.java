@@ -48,5 +48,5 @@ public class BubbleSortForIntegers {
 		} catch (ArrayLengthDoesNotSatisfyTheRequiredLengthException e) {
 			logger.error(e);
 		}
-	}
+}
 }
