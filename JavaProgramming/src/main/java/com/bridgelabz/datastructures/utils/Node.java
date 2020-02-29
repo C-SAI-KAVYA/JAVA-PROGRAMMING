@@ -6,8 +6,7 @@ public class Node<T> {
 	Node<T> left;
 	Node<T> right;
 	
-	public Node() {
-		
+	public Node() {	
 	}
 	public Node(T key) {
 		data = key;
