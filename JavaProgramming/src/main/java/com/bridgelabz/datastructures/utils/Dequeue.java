@@ -159,7 +159,6 @@ public class Dequeue<T> {
 		}
 		return dequeue[rear];
 	}
-	
 	public void printDequeue() {
 		for(int i=0; i<capacity; i++) {
 			logger.info((front+i) % capacity);//circular array loop
