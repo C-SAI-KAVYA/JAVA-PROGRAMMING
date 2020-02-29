@@ -31,5 +31,5 @@ public class InsertionSortForString {
 		logger.info("the sorted string is");
 		OutputUtility.println(sortedContent);
 		OutputUtility.writeToFile(sortedContent, "F:\\BridgeLabzFellowship\\JavaProgramming\\textfiles\\InsertionSortStrings.txt");
-	}
+}
 }
