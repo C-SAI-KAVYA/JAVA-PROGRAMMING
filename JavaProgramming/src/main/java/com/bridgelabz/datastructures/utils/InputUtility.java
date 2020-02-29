@@ -162,7 +162,6 @@ public class InputUtility {
 			throw new NoSuchElementException(
 					"attempts to read a 'boolean' value from standard input, " + "but no more tokens are available");
 		}
-
 	}
 
 	public static String stringVal() {
