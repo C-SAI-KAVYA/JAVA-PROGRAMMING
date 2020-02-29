@@ -10,7 +10,6 @@ import com.bridgelabz.exceptions.PrimeFactorsCannotBeFoundForZeroAndOneException
 import com.bridgelabz.exceptions.UnspecifiedOptionSelectedException;
 
 public class Utility {
-
 	/**
 	 * private constructor
 	 */
