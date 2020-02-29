@@ -10,7 +10,6 @@ import org.hamcrest.collection.IsEmptyCollection;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.*;
 import org.junit.Test;
-
 import com.bridgelabz.basicprogramming.utils.Utility;
 import com.bridgelabz.exceptions.PrimeFactorsCannotBeFoundForZeroAndOneException;
 
