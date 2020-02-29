@@ -10,7 +10,6 @@ import com.bridgelabz.logicalprograms.utils.LogsUtility;
 import com.bridgelabz.logicalprograms.utils.Utility;
 
 public class StopWatch {
-
 	public static void main(String[] args) throws NumberNotInRequiredFormatOrSizeException {
 		LogsUtility.setLog("StopWatch");
 		Logger logger = LogsUtility.getLog();
