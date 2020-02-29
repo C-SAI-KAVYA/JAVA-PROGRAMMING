@@ -28,7 +28,6 @@ public class TestDayOfWeek {
 	public void testDayOfWeek_InvalidDateEnteredException_00And12And1998() throws InvalidDateEnteredException {
 		Utility.dayOfWeek(00, 12, 1998);
 	}
-	
 	@Test(expected = InvalidDateEnteredException.class)
 	public void testDayOfWeek_InvalidDateEnteredException_30And02And2016() throws InvalidDateEnteredException {
 		Utility.dayOfWeek(30, 02, 2016);
