@@ -29,6 +29,5 @@ public class Gambler {
 		logger.info("loss percentages are as follows");
 		
 		OutputUtility.print1DDoubleArray(winsAndLossesPercentage);
-		
 	}
 }
