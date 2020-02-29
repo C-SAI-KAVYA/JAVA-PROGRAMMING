@@ -6,7 +6,6 @@ import com.bridgelabz.exceptions.InvalidIntegerException;
 import com.bridgelabz.logicalprograms.utils.Utility;
 
 public class TestStopWatch {
-	
 
 	@Test(expected = InvalidIntegerException.class)
 	public void testStopWatch_InvalidIntegerException_Minus1() throws InvalidIntegerException{
