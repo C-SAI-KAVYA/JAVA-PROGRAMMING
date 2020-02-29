@@ -40,6 +40,6 @@ public class TestStringPermutations {
 		recursiveArrayOfPermutations = Utility.recursivePermutations("", "Dog");
 		boolean equals = false;
 		assertEquals(equals, Utility.checkIterativeAndRecursivePermutationEquals(iterativeListOfPermutations, recursiveArrayOfPermutations));
-	}
+}
 
 }
