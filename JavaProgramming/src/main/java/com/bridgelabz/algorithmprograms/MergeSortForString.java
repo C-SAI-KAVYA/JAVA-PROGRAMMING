@@ -35,5 +35,5 @@ public class MergeSortForString {
 		System.out.println(sortedContent);
 		OutputUtility.writeToFile(sortedContent, "F:\\BridgeLabzFellowship\\JavaProgramming\\textfiles\\MergeSortStrings.txt");
 		
-	}
+}
 }
