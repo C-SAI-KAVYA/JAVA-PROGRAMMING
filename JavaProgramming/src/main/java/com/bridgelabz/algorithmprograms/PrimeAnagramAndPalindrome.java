@@ -47,5 +47,5 @@ public class PrimeAnagramAndPalindrome {
 		} catch (PrimeFactorsCannotBeFoundForZeroAndOneException e) {
 			logger.error(e);
 		}
-	}
+}
 }
