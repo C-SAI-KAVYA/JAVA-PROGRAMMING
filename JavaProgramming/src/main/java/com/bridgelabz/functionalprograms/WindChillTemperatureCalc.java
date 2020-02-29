@@ -32,6 +32,5 @@ public class WindChillTemperatureCalc {
 		
 		logger.info("Thank you for using Wind Chill Temparature Calculator");
 		
-		
 	}
 }
