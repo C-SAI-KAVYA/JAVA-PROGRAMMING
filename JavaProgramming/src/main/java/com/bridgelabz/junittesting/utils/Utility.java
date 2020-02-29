@@ -16,7 +16,6 @@ public class Utility {
 	private Utility() {
 
 	}
-
 	// Vending Machine
 	public static int i = 0;
 	public static int total = 0;
