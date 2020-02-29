@@ -89,7 +89,6 @@ public class SumOfThreeNumbersAdds {
 			default:
 				throw new UnspecifiedOptionSelectedError("Selected Option is not presnt in the list");
 		}
-		
 		logger.info("Thank you for using SumOfThreeNumbersAddsToZero calculator");
 	}
 
