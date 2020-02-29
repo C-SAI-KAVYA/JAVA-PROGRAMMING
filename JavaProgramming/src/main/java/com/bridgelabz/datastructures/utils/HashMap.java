@@ -108,7 +108,6 @@ public class HashMap<K, V> {
 			return null;
 		}
 	}
-	
 	public boolean containsKey(K key) {
         return get(hash(key), key) != null;
     }
