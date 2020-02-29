@@ -33,5 +33,5 @@ public class PrimeFactors {
 		for(int i : primeFactors) {
 			logger.info(i);
 		}
-	}
+}
 }
