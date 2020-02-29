@@ -42,5 +42,5 @@ public class BinarySearchForWord {
 				logger.error(e);
 			}
 		}
-	}
+}
 }
