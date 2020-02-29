@@ -28,6 +28,6 @@ public class FlipCoin {
 
 		logger.debug("The heads percentage is " + headsTailsPercentage[0]);
 		logger.debug("The Tails percentage is " + headsTailsPercentage[1]);
-	}
+}
 
 }
