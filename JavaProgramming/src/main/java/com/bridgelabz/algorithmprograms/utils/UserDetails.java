@@ -22,7 +22,7 @@ public class UserDetails {
 
 		public void setmobileNo(String mobileNo){
 			this.mobileNo=mobileNo;
-		}
+	}
 
 		public void setdate(String date){
 			this.date=date;
