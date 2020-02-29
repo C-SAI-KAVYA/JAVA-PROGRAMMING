@@ -20,7 +20,6 @@ public class DecimalToBinary {
 		Logger logger = LogsUtility.getLog();
 		System.setProperty("fname", LogsUtility.FILEPATH+"DecimalToBinary.log");
 		PropertyConfigurator.configure(LogsUtility.CONFIGPATH);
-		
 		try {
 			logger.info("enter a no");
 			int[] binary = Utility.toBinary(InputUtility.intVal());
