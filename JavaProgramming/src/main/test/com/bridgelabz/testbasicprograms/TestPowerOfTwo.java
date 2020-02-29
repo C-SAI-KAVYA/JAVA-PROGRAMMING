@@ -38,6 +38,4 @@ public class TestPowerOfTwo {
 		assertArrayEquals(expected,Utility.powerOfTwo(-3, -4),Math.E);
 	}
 	
-	
-
 }
