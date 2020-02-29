@@ -15,7 +15,6 @@ public class VendingMachine {
 		Logger logger = LogsUtility.getLog();
 		System.setProperty("fname", LogsUtility.FILEPATH + "VendingMachine.log");
 		PropertyConfigurator.configure(LogsUtility.CONFIGPATH);
-
 		try {
 			// ask the user enter the money
 			logger.info("Enter the Amount:");
