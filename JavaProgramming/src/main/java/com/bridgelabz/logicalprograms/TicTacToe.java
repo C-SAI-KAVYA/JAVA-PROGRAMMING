@@ -19,7 +19,6 @@ public class TicTacToe {
 		
 		String decision = Utility.playTicTacToe();
 		System.out.println(decision);
-
 	}
 
 }
