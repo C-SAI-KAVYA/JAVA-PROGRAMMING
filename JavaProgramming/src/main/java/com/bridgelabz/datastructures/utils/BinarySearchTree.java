@@ -66,7 +66,6 @@ public class BinarySearchTree<T> {
 			bst.isBst = true;
 			bst.bst = 1 + l.bst + r.bst;
 		}
-		
 		//If the whole tree is not a binary search tree update the number of binary search trees
 		
 		else {
