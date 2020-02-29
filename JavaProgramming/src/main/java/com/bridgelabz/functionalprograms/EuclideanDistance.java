@@ -33,5 +33,4 @@ public class EuclideanDistance {
 		logger.info("Thank you for using Euclidean Distance Calculator");
 		
 	}
-
 }
