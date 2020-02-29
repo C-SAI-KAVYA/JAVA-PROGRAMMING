@@ -28,7 +28,6 @@ public class LinkedList<T> {
 		return head == null;
 	}
 
-
 	/**
 	 * method to insert the node at the beginning
 	 * 
