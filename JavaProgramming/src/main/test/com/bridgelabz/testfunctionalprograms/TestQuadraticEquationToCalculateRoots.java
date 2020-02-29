@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import com.bridgelabz.errors.QuadraticRootsCantBeFoundForZeroOrLessValuesError;
 import com.bridgelabz.functionalprograms.utils.Utility;
-
 public class TestQuadraticEquationToCalculateRoots {
 	
 	@Test(expected=QuadraticRootsCantBeFoundForZeroOrLessValuesError.class)
