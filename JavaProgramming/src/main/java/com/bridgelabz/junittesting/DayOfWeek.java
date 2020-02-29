@@ -65,6 +65,5 @@ public class DayOfWeek {
 			} catch (InvalidDateEnteredException e) {
 				logger.error(e);
 			}
-		
 		}
 }
