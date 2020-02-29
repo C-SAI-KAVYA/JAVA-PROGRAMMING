@@ -3,7 +3,6 @@ package com.bridgelabz.testlogicalprograms;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
 import com.bridgelabz.errors.UnspecifiedOptionSelectedError;
 import com.bridgelabz.logicalprograms.utils.Utility;
 
