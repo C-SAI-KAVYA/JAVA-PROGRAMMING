@@ -37,6 +37,6 @@ public class PowerOfTwo {
 			for (int i = 0; i < tillPower; i++)
 				logger.info(numberPower + " to the power " + i + " is equal to " + powersOfTwo[i]);
 		}
-	}
+}
 
 }
