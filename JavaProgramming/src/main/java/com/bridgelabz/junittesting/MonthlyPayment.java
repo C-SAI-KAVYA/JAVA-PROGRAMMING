@@ -14,7 +14,6 @@ public class MonthlyPayment {
 		Logger logger = LogsUtility.getLog();
 		System.setProperty("fname", LogsUtility.FILEPATH+"MonthlyPayment.log");
 		PropertyConfigurator.configure(LogsUtility.CONFIGPATH);
-		
 		logger.info("enter principal ,year and rate");
 		double p = InputUtility.doubleVal();
 		int y = InputUtility.intVal();
