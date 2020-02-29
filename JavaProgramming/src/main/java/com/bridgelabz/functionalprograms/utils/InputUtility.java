@@ -16,7 +16,6 @@ public class InputUtility {
 	private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
 	private static Scanner scanner = new Scanner(System.in);
 	static Logger logger = Logger.getLogger(InputUtility.class);
-
 	private InputUtility() {
 	}
 
