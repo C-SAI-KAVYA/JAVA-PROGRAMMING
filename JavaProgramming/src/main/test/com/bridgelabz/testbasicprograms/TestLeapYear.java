@@ -39,5 +39,5 @@ public class TestLeapYear {
 	@Test
 	public void testLeapYear_True_2000() throws NumberNotInRequiredFormatOrSizeException, LessThanOrGreaterThanSpecifiedRangeException {
 		assertEquals(true,Utility.isLeapYear(2000));
-	}
+}
 }
