@@ -474,5 +474,4 @@ public class OutputUtility {
 				out.printf(locale, format, args);
 				out.flush();
 			}
-	
 }
