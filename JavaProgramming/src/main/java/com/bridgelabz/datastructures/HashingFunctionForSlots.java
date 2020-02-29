@@ -48,5 +48,4 @@ public class HashingFunctionForSlots {
 		}
 		hashmap.display();
 	}
-
 }
