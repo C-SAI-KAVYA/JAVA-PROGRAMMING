@@ -106,7 +106,7 @@ public class OutputUtility {
 		for(String index : stringArray)
 			OutputUtility.print(index+" ");
 	}
-	
+
 	//printing 2D Array of
 	 public static void print2DByteArray(byte[][] byteArray) {
 		 int rows = byteArray[0].length;
