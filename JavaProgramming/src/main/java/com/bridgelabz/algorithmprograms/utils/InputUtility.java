@@ -573,7 +573,7 @@ public class InputUtility {
 		for (int index = 0; index < rows; index++) {
 			for (int jIndex = 0; jIndex < columns; jIndex++)
 				doubleArray[index][jIndex] = doubleVal();
-		}
+	}
 		return doubleArray;
 	}
 
