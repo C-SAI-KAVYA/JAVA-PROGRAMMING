@@ -21,6 +21,5 @@ public class SquareRootWithEpsilon {
 		} catch (NegativeOrZeroNumberFoundException e) {
 			logger.error(e);
 		}
-
 	}
 }
