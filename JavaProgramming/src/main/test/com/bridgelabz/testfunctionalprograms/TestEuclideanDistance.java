@@ -13,7 +13,6 @@ public class TestEuclideanDistance {
 	public void testEuclideanDistance_UnsupportedValuesForEuclideanDistanceCalculationException_MinusTwoAndMinusThree() throws UnsupportedValuesForEuclideanDistanceCalculationException {
 		Utility.euclideanDistance(-2, -3);
 	}
-	
 	@Test(expected = UnsupportedValuesForEuclideanDistanceCalculationException.class)
 	public void testEuclideanDistance_UnsupportedValuesForEuclideanDistanceCalculationException_MinusFourtyfiveAndSixtySeven() throws UnsupportedValuesForEuclideanDistanceCalculationException {
 		Utility.euclideanDistance(-45, 67);
