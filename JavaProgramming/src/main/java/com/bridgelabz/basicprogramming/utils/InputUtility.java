@@ -18,7 +18,7 @@ public class InputUtility {
 	}
 	public static boolean isEmpty() {
 		return !scanner.hasNext();
-	}
+}
 
 	public static boolean hasNextLine() {
 		return scanner.hasNextLine();
