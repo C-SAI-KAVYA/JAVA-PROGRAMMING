@@ -22,5 +22,4 @@ public class DistinctCouponNumber {
 		logger.info("the number of times the random called is "+Utility.distinctCouponNumbers(randomNumberByUser));
 		
 	}
-
 }
