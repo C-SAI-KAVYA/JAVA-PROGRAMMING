@@ -30,6 +30,6 @@ public class LeapYear {
 		} catch (NumberNotInRequiredFormatOrSizeException | LessThanOrGreaterThanSpecifiedRangeException e) {
 			logger.info(e);
 		}
-	}
+}
 
 }
