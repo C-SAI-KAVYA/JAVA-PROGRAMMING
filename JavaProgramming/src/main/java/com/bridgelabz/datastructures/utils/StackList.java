@@ -36,7 +36,6 @@ public class StackList<T> {
 		}
 
 	}
-
 	/**
 	 * Purpose: show top element of stack
 	 * 
