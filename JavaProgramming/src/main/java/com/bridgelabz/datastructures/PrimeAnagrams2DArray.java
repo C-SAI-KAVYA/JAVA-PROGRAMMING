@@ -31,5 +31,4 @@ public class PrimeAnagrams2DArray {
 			logger.error(e);
 		}
 	}
-
 }
