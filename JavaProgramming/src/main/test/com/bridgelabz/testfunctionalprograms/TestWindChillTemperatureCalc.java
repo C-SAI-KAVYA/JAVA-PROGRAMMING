@@ -23,7 +23,6 @@ public class TestWindChillTemperatureCalc {
 	public void testWindChillTemperatureCalc_LessThanOrGreaterThanSpecifiedRangeException_56And115() throws LessThanOrGreaterThanSpecifiedRangeException {
 		Utility.windChillTemperatureCalculator(56, 115);
 	}
-	
 	@Test
 	public void testWindChillTemperatureCalc_2point6842396738801426_45And115() throws LessThanOrGreaterThanSpecifiedRangeException {
 		double expected = 2.6842396738801426;
