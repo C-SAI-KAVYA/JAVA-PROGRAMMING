@@ -15,7 +15,6 @@ public class Queue<T> {
 		capacity = size;
 		queue = (T[]) new Object[size];
 	}
-	
 	public void enqueue(T data) {
 		if(!isFull()) {
 			queue[rear] = data;
