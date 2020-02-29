@@ -43,5 +43,4 @@ public class CalendarUsingQueueAndDoubleStack {
 		} else
 			OutputUtility.println("Please enter valid month");
 	}
-
 }
