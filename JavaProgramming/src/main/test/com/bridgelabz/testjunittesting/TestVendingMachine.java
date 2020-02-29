@@ -19,7 +19,6 @@ public class TestVendingMachine {
 //	public void testVendingMachine_4_532() throws ChangeCannotBeCalculatedForZeroOrNegativeException {
 //		assertEquals(4, Utility.vendingMachine(532, Utility.notes));
 //	}
-	
 	@Test
 	public void testVendingMachine_4_123() throws ChangeCannotBeCalculatedForZeroOrNegativeException {
 		assertEquals(4, Utility.vendingMachine(123, Utility.notes));
