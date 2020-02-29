@@ -56,5 +56,4 @@ public class OrderedList {
 		logger.info(modifiedContent);
 		OutputUtility.writeToFile(modifiedContent, fileName);
 	}
-
 }
