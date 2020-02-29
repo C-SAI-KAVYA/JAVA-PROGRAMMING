@@ -54,6 +54,6 @@ public class TestGenericBubbleSort {
 		Character[] expectedArray = {'z', 'w', 'c', 'b', 'a'};
 		Character[] inputArray = {'z', 'b', 'c', 'a', 'w'};
 		assertArrayEquals(expectedArray, Utility.genericBubbleSortD(inputArray));
-	}
+}
 
 }
