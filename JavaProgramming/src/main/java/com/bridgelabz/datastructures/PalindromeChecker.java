@@ -26,5 +26,4 @@ public class PalindromeChecker {
 		else
 			logger.info("Not palindrome");
 	}
-
 }
