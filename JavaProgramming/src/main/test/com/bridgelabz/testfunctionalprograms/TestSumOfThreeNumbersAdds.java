@@ -55,7 +55,6 @@ public class TestSumOfThreeNumbersAdds {
 		int expectedCount = 2;
 		assertEquals(expectedCount, Utility.findTriplets(inputArray));
 	}
-
 	// for long array
 	@Test(expected = ArraySizeDoesNotSatisfyRequiredLengthException.class)
 	public void testSumOfThreeNumbersAdds_ArraySizeDoesNotSatisfyRequiredLengthException_26AndMinus44() throws ArraySizeDoesNotSatisfyRequiredLengthException {
