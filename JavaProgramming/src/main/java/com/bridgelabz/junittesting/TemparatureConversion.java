@@ -26,6 +26,5 @@ public class TemparatureConversion {
 		} catch (UnsupportedTemparatureEnteredException e) {
 			logger.error(e);
 		}
-
 	}
 }
