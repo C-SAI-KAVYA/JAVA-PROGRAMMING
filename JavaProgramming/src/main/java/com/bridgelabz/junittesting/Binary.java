@@ -7,7 +7,6 @@ import com.bridgelabz.basicprogramming.utils.LogsUtility;
 import com.bridgelabz.exceptions.NegativeOrZeroNumberFoundException;
 import com.bridgelabz.junittesting.utils.InputUtility;
 import com.bridgelabz.junittesting.utils.Utility;
-
 public class Binary {
 	public static void main(String[] args) {
 		LogsUtility.setLog("Binary");
