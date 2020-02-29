@@ -13,6 +13,6 @@ public class TestFlipCoin {
 	@Test(expected=NegativeOrZeroNumberFoundException.class)
 	public void testFlipCoin_NegativeOrZeroNumberFoundException_Negative2() throws NegativeOrZeroNumberFoundException {
 		Utility.flipCoin(-2);
-	}
+}
 	
 }
