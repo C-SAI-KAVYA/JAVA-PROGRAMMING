@@ -45,7 +45,6 @@ public class Stack<T> {
 		}
 		return data;
 	}
-	
 	public T peek() {
 		T data;
 		data = stack[top-1];//last value that is inserted
