@@ -20,7 +20,7 @@ public class TestStringAnagram {
 		String string1 = "ASTRONOMERS";
 		String string2 = "NOMORESTARS";
 		assertEquals(true, Utility.isAnagram( string1,string2));
-	}
+}
 	
 	@Test
 	public void testInsertionSortGeneric_false_TwoStrings() throws CannotCheckAnagramForEmptyStringException {
