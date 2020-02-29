@@ -19,5 +19,4 @@ public class TestGambler {
 		double[] expected = {2.0, 100.0, 0.0};
 		assertArrayEquals(expected, Utility.gambler(2, 4),Math.E);
 	}
-
 }
