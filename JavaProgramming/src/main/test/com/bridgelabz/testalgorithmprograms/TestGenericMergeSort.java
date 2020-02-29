@@ -54,6 +54,6 @@ public class TestGenericMergeSort {
 		Character[] expectedArray = {'z', 'w', 'c', 'b', 'a'};
 		Character[] inputArray = {'z', 'b', 'c', 'a', 'w'};
 		assertArrayEquals(expectedArray, Utility.genericMergeSortD(inputArray, 0, inputArray.length-1));
-	}
+}
 		
 }
