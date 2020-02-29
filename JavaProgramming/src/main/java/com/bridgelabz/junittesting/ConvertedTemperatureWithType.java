@@ -8,5 +8,4 @@ public class ConvertedTemperatureWithType {
 		convertedTemperature = ct;
 		tempType = t;
 	}
-
 }
