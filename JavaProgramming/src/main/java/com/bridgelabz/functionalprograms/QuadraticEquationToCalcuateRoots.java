@@ -25,8 +25,7 @@ public class QuadraticEquationToCalcuateRoots {
 		double[] roots = Utility.quadraticRootsCalculator(a, b, c);
 		
 		logger.info("root 1 is "+roots[0]);
-		logger.info("root 2 is "+roots[1]);
-		
+		logger.info("root 2 is "+roots[1]);		
 		logger.info("Thank you for using Quadratic roots calculator");
 	}
 }
