@@ -31,5 +31,5 @@ public class TaskManager {
 		} catch (Exception e) {
 			logger.error(e);
 		}
-	}
+}
 }
