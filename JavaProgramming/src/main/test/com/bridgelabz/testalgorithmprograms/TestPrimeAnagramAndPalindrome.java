@@ -44,6 +44,6 @@ public class TestPrimeAnagramAndPalindrome {
 	public void testPrimeAnagramAndPalindrome_0to1000PrimePalindromeNumbersExpected_limit1000() throws PrimeFactorsCannotBeFoundForZeroAndOneException {
 		List<Integer> expected = Arrays.asList(2,3,5,7,11,101,131,151,181,191,313,353,373,383,727,757,787,797,919,929);
 		assertThat(expected, is(Utility.primePalindrome(1000)));
-	}
+}
 
 }
