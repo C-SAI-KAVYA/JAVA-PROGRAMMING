@@ -44,6 +44,6 @@ public class StringPermutations {
 		} catch (PermutationsCannotBeFoundForNullOrZeroCharacterisedString e) {
 				logger.error(e);
 		}
-	}
+}
 
 }
