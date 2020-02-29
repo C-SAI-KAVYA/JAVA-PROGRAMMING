@@ -33,5 +33,4 @@ public class CalendarWeekdayUsingQueue {
 			logger.error(e);
 		}
 	}
-
 }
