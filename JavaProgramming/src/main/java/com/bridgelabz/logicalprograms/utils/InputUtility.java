@@ -33,7 +33,7 @@ public class InputUtility {
 		scanner.useDelimiter(WHITESPACE_PATTERN);
 		return result;
 	}
-	
+
 	public static String readLine() {
 		String line;
 		try {
