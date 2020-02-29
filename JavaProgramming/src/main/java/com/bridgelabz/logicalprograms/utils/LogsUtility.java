@@ -3,7 +3,7 @@ package com.bridgelabz.logicalprograms.utils;
 import org.apache.log4j.Logger;
 
 public class LogsUtility {
-	
+
 	private LogsUtility() {
 		
 	}
