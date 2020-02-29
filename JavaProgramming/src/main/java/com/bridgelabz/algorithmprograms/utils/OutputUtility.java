@@ -43,7 +43,7 @@ public class OutputUtility {
 	}
 	public static void printFloatVal(float flt) {
 		logger.info(flt);
-	}
+}
 	public static void printDoubleVal(double dble ) {
 		logger.info(dble);
 	}
