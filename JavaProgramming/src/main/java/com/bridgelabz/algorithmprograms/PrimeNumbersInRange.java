@@ -26,5 +26,5 @@ public class PrimeNumbersInRange {
 		} catch (PrimeFactorsCannotBeFoundForZeroAndOneException e) {
 			logger.error(e);
 		}
-	}
+}
 }
