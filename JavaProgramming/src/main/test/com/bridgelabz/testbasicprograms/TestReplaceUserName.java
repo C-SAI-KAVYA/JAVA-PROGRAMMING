@@ -14,6 +14,6 @@ public class TestReplaceUserName {
 		} catch (NameNotFoundException e) {
 			e.getMessage();
 		}
-	}
+}
 	
 }
