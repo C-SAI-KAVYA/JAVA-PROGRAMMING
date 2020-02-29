@@ -52,7 +52,6 @@ public class InputUtility {
 		scanner.useDelimiter(WHITESPACE_PATTERN); // but let's do it anyway
 		return result;
 	}
-
 	public static byte byteVal() {
 		try {
 			return scanner.nextByte();
