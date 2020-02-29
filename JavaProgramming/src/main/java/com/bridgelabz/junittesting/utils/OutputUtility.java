@@ -8,7 +8,6 @@ import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.Locale;
-
 import org.apache.log4j.Logger;
 
 public class OutputUtility {
