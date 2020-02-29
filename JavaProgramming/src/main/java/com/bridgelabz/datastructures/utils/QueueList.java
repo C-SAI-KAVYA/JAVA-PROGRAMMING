@@ -19,7 +19,6 @@ public class QueueList<T> {
 	public boolean isEmpty() {
 		return (size == 0);
 	}
-
 	// Add item to the end of the list.
 	public void enqueue(T key) {
 		Node<T> oldRear = rear;
