@@ -14,7 +14,6 @@ public class TestTemperatureConversion {
 	public void testTemperatureConversion_UnsupportedTemparatureEnteredException_45point76Anda() throws UnsupportedTemparatureEnteredException{
 		Utility.temperaturConversion(45.76, 'a');
 	}
-	
 	@Test
 	public void testTemperatureConversion_Minus10point922222222222222Andc_12point34Andf() throws UnsupportedTemparatureEnteredException {
 		ConvertedTemperatureWithType expected = new ConvertedTemperatureWithType(-10.922222222222222, 'c');
