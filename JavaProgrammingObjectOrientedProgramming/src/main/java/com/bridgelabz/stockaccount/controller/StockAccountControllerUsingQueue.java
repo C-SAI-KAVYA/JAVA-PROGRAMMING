@@ -32,7 +32,6 @@ public class StockAccountControllerUsingQueue {
 		for(int i = 0; i< transactionModel.getTransactionInformation().size(); i++) {
 			transactionQueue.enqueue(transactionModel.getTransactionInformation().get(i));
 		}
-		
 		int size = transactionQueue.size();
 		for(int i=0;i<size;i++) {
 			logger.info(transactionQueue.get(i).getDateAndTimeOfTransaction());
