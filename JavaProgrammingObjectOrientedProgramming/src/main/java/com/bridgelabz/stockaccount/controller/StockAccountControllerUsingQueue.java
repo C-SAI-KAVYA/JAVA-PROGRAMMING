@@ -6,7 +6,6 @@ import org.apache.log4j.PropertyConfigurator;
 import com.bridgelabz.stockaccount.model.Transaction;
 import com.bridgelabz.stockaccount.model.TransactionModel;
 import com.bridgelabz.stockaccount.repository.StockAccountRepository;
-import com.bridgelabz.stockaccount.serviceprovider.StockAccountServiceProviderImpl;
 import com.bridgelabz.stockaccount.utils.QueueList;
 import com.bridgelabz.stockaccountmanagement.utils.LogsUtility;
 
@@ -16,9 +15,9 @@ public class StockAccountControllerUsingQueue {
 		
 		final String filePath = "F:\\BridgeLabzFellowship\\JavaProgrammingObjectOrientedProgramming\\staticjson\\";
 		
-		LogsUtility.setLog("StockAccountController");
+		LogsUtility.setLog("StockAccountControllerUsingQueue");
 		Logger logger = LogsUtility.getLog();
-		System.setProperty("fname", LogsUtility.FILEPATH + "StockAccountController.log");
+		System.setProperty("fname", LogsUtility.FILEPATH + "StockAccountControllerUsingQueue.log");
 		PropertyConfigurator.configure(LogsUtility.CONFIGPATH);
 		StockAccountRepository repo = new StockAccountRepository();
 		TransactionModel transactionModel = new TransactionModel();
@@ -30,8 +29,14 @@ public class StockAccountControllerUsingQueue {
 		transactionModel = (TransactionModel) repo.readFromJSONFile(initialFilePath, TransactionModel.class);
 		logger.info(transactionQueue);
 		logger.info("Successfully read transaction details");
-		transactionQueue.enqueue(transactionModel.getTransactionInformation());
-
+		for(int i = 0; i< transactionModel.getTransactionInformation().size(); i++) {
+			transactionQueue.enqueue(transactionModel.getTransactionInformation().get(i));
+		}
+		int size = transactionQueue.size();
+		for(int i=0;i<size;i++) {
+			logger.info(transactionQueue.get(i).getDateAndTimeOfTransaction());
+			transactionQueue.dequeue();
+		}
 	}
 
 }

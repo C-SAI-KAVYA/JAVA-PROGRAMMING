@@ -69,6 +69,16 @@ public class QueueList<T> {
 	public T get() {
 		return list.getNodeOnIndex(size);
 	}
+	/**
+	 * method to get the Nth node, N can be any number
+	 * 
+	 * @param index
+	 * @return
+	 */
+	public T get(int index) {
+		return list.getNodeOnIndex(index);
+	}// get on index
+	
 	public int size() {
 		return size;
 	}
