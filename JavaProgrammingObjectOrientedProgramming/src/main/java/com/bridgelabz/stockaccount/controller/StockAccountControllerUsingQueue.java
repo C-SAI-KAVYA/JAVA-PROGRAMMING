@@ -15,9 +15,9 @@ public class StockAccountControllerUsingQueue {
 		
 		final String filePath = "F:\\BridgeLabzFellowship\\JavaProgrammingObjectOrientedProgramming\\staticjson\\";
 		
-		LogsUtility.setLog("StockAccountController");
+		LogsUtility.setLog("StockAccountControllerUsingQueue");
 		Logger logger = LogsUtility.getLog();
-		System.setProperty("fname", LogsUtility.FILEPATH + "StockAccountController.log");
+		System.setProperty("fname", LogsUtility.FILEPATH + "StockAccountControllerUsingQueue.log");
 		PropertyConfigurator.configure(LogsUtility.CONFIGPATH);
 		StockAccountRepository repo = new StockAccountRepository();
 		TransactionModel transactionModel = new TransactionModel();
