@@ -1,0 +1,24 @@
+{
+	"wheatsList": [
+		{
+			"productName": "Swastik",
+			"productWeight": 5.0,
+			"pricePerKg": 45
+		}
+	],
+	"pulsesList": [
+		{
+			"productName": "Hitech",
+			"productWeight": 10.0,
+			"pricePerKg": 65
+		}
+	],
+	"riceList": [
+		{
+			"productName": "Kohinoor",
+			"productWeight": 7.0,
+			"pricePerKg": 60
+		}
+	],
+	"totalStockValue": 1175
+}

@@ -1,0 +1,35 @@
+{
+	"dairyMilk": [
+		{
+			"stockName": "DAIRY_MILK",
+			"numberOfShares": 120,
+			"sharePrices": 5.0,
+			"totalStockValue": 600.0
+		}
+	],
+	"milkyBar": [
+		{
+			"stockName": "NESTLE_MILKY_BAR",
+			"numberOfShares": 150,
+			"sharePrices": 10.0,
+			"totalStockValue": 1500.0
+		}
+	],
+	"kitKat": [
+		{
+			"stockName": "NESTLE_KIT_KAT",
+			"numberOfShares": 110,
+			"sharePrices": 20.0,
+			"totalStockValue": 2200.0
+		}
+	],
+	"pikNik": [
+		{
+			"stockName": "PIK_NIK",
+			"numberOfShares": 180,
+			"sharePrices": 50.0,
+			"totalStockValue": 9000.0
+		}
+	],
+	"totalValueOfAllStocks": 13300.0
+}

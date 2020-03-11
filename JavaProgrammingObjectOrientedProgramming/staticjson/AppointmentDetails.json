@@ -1,0 +1,49 @@
+{
+	"appointmentsList": [
+		{
+			"appID": 10001,
+			"doctorID": 3,
+			"doctorName": "Dr. priyanka",
+			"doctorStatus": "30/09/2019",
+			"assignedPatientID": 1002,
+			"assignedPatientName": "abhya",
+			"assignedPatientMobileNumber": "8850222666"
+		},
+		{
+			"appID": 10002,
+			"doctorID": 1,
+			"doctorName": "Dr. swapna",
+			"doctorStatus": "29/09/2019",
+			"assignedPatientID": 1001,
+			"assignedPatientName": "vicky",
+			"assignedPatientMobileNumber": "8850222545"
+		},
+		{
+			"appID": 10003,
+			"doctorID": 2,
+			"doctorName": "Dr. vishnu",
+			"doctorStatus": "28/09/2019",
+			"assignedPatientID": 1002,
+			"assignedPatientName": "abhya",
+			"assignedPatientMobileNumber": "8850222666"
+		},
+		{
+			"appID": 10004,
+			"doctorID": 3,
+			"doctorName": "Dr. priyanka",
+			"doctorStatus": "30/09/2019",
+			"assignedPatientID": 1002,
+			"assignedPatientName": "abhya",
+			"assignedPatientMobileNumber": "8850222666"
+		},
+		{
+			"appID": 101,
+			"doctorID": 2,
+			"doctorName": "Dr.vishnu",
+			"doctorStatus": "28/09/2019",
+			"assignedPatientID": 1005,
+			"assignedPatientName": "vicky",
+			"assignedPatientMobileNumber": "8850222545"
+		}
+	]
+}
