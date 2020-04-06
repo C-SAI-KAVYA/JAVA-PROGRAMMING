@@ -1,0 +1,22 @@
+create procedure insertEmployee(IN id int, IN fn VARCHAR(255), IN ln VARCHAR(255), IN email VARCHAR(255), IN mn long)
+    -> begin
+    -> INSERT INTO employee_details values(id,fn,ln,email,mn);
+    -> end;
+    -> /
+
+create procedure updateEmployee(IN id1 int, IN id int, IN fn VARCHAR(255), IN ln VARCHAR(255), IN email VARCHAR(255), IN mn long)
+    -> begin
+    -> UPDATE employee_details SET EmpID=id, EmpFirstName=fn, EmpLastName=ln, EmpEmail=email, EmpMobileNumber=mn WHERE EmpID=id1;
+    -> end;
+    -> /
+
+create procedure deleteOnID(IN id int)
+    -> begin
+    -> DELETE FROM employee_details WHERE EmpID=id;
+    -> end;
+    -> /
+
+ create procedure readTableOnID(IN id1 INT, OUT id INT, OUT fn1 VARCHAR(255), OUT ln1 VARCHAR(255), OUT email1 VARCHAR(255), OUT mn LONG)
+    -> BEGIN
+    -> SELECT EmpID, EmpFirstName, EmpLastName, EmpEmail, EmpMobileNumber INTO id, fn1, ln1, email1, mn FROM employee_details WHERE EmpID = id1;
+    -> END/
