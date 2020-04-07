@@ -14,14 +14,14 @@ import org.apache.log4j.Logger;
 
 public class Configuration {
 	private static Logger logger = Logger.getLogger(EmployeeConfiguration.class);
-	private static ;
+	private final String filePath = "F:\\BridgeLabzFellowship\\JDBCCRUDCallableStatements\\resources\\Configuration.properties";
 	private static Properties properties = new Properties();
 	private static Connection connection;
 	private static Configuration configuration;
 	
 	//Constructor to load the properties file
 	private Configuration() {
-		try(FileInputStream fips = new FileInputStream(new File("F:\\BridgeLabzFellowship\\JDBCCRUDCallableStatements\\resources\\Configuration.properties"));){
+		try(FileInputStream fips = new FileInputStream(new File(filePath));){
 			properties.load(fips);
 		}catch(FileNotFoundException fnfe) {
 			logger.error(fnfe);
