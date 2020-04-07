@@ -1,46 +1,46 @@
 package com.bridgelabz.employee.model;
 
-public class EmployeeModel {
-	private int EmpID;
-	private String EmpFirstName;
-	private String EmpLastName;
-	private String EmpEmail;
-	private int EmpMobileNumber;
+public class Employee {
+	private int iD;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private long mobileNumber;
 	
 	
 	public int getEmpID() {
-		return EmpID;
+		return iD;
 	}
-	public void setEmpID(int empID) {
-		EmpID = empID;
+	public void setID(int empID) {
+		empID = empID;
 	}
-	public String getEmpFirstName() {
-		return EmpFirstName;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setEmpFirstName(String empFirstName) {
-		EmpFirstName = empFirstName;
+	public void setFirstName(String empFirstName) {
+		firstName = empFirstName;
 	}
-	public String getEmpLastName() {
-		return EmpLastName;
+	public String getLastName() {
+		return lastName;
 	}
 	public void setEmpLastName(String empLastName) {
-		EmpLastName = empLastName;
+		lastName = empLastName;
 	}
 	public String getEmpEmail() {
-		return EmpEmail;
+		return email;
 	}
 	public void setEmpEmail(String empEmail) {
-		EmpEmail = empEmail;
+		email = empEmail;
 	}
-	public int getEmpMobileNumber() {
-		return EmpMobileNumber;
+	public long getEmpMobileNumber() {
+		return mobileNumber;
 	}
-	public void setEmpMobileNumber(int empMobileNumber) {
-		EmpMobileNumber = empMobileNumber;
+	public void setEmpMobileNumber(long empMobileNumber) {
+		mobileNumber = empMobileNumber;
 	}
 	@Override
 	public String toString() {
-		return "EmployeeManagementModel [EmpID=" + EmpID + ", EmpFirstName=" + EmpFirstName + ", EmpLastName="
-				+ EmpLastName + ", EmpEmail=" + EmpEmail + ", EmpMobileNumber=" + EmpMobileNumber + "]";
+		return "EmployeeManagementModel [EmpID=" + iD + ", EmpFirstName=" + firstName + ", EmpLastName="
+				+ lastName + ", EmpEmail=" + email + ", EmpMobileNumber=" + mobileNumber + "]";
 	}
 }
