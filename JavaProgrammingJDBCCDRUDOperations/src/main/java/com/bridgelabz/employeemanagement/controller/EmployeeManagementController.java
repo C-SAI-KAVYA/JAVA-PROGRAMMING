@@ -16,8 +16,7 @@ public class EmployeeManagementController {
 		PropertyConfigurator.configure(LogsUtility.CONFIGPATH);
 		
 		int choice;
-		boolean exit = false;
-		while(!exit) {
+		do{
 			logger.info("Enter What you would like to do : ");
 			logger.info("\n1. Create New Database \n2. Create New Table\n3. Insert New Employee Details\n4. Read Employee Details Based On ID\n5. Read Employee Details Table\n6. Update Employee Details Based On ID\n7. Delete Employee Details Based On ID\n8. Delete Table\n9. exit");
 			choice = InputUtility.intVal();
@@ -53,6 +52,6 @@ public class EmployeeManagementController {
 				default:
 					logger.info("Invalid Option Selected................................");
 			}
-		}
+		}while(choice != 5) 
 	}
 }
