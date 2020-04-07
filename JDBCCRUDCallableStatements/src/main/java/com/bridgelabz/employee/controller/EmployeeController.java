@@ -9,15 +9,14 @@ import com.bridgelabz.employee.utils.LogsUtility;
 
 public class EmployeeController {
 	public static void main(String[] args) {
-		EmployeeServiceProviderImpl impl = new EmployeeServiceProviderImpl();
+		EmployeeServiceProviderImpl impl = EmployeeServiceProviderImpl.getInstance();
 		LogsUtility.setLog("employeeController");
 		Logger logger = LogsUtility.getLog();
 		System.setProperty("fname", LogsUtility.FILEPATH+"employeeController.log");
 		PropertyConfigurator.configure(LogsUtility.CONFIGPATH);
 		
 		int choice;
-		boolean exit = false;
-		while(!exit) {
+		do{
 			logger.info("Enter What you would like to do : ");
 			logger.info("\n1. Insert New Employee Details\n2. Read Employee Details Based On ID\n3. Update Employee Details Based On ID\n4. Delete Employee Details Based On ID\n5. exit");
 			choice = InputUtility.intVal();
@@ -35,12 +34,11 @@ public class EmployeeController {
 					impl.deleteEmployeeDetailsOnID();
 					break;
 				case 5:
-					exit = true;
 					logger.info("Successfully Exited.................................");
 					break;
 				default:
 					logger.info("Invalid Option Selected................................");
 			}
-		}s
+		}while(choice != 5) 
 	}
 }
