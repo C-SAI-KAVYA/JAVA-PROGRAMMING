@@ -12,17 +12,16 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 
 
-public class EmployeeConfiguration {
-	Logger logger = Logger.getLogger(EmployeeConfiguration.class);
-	FileInputStream fips = null;
-	Properties properties = new Properties();
-	Connection connection = null;
-	static EmployeeConfiguration configuration = null;
+public class Configuration {
+	private static Logger logger = Logger.getLogger(EmployeeConfiguration.class);
+	private static ;
+	private static Properties properties = new Properties();
+	private static Connection connection;
+	private static Configuration configuration;
 	
 	//Constructor to load the properties file
-	public EmployeeConfiguration() {
-		try{
-			fips = new FileInputStream(new File("F:\\BridgeLabzFellowship\\JDBCCRUDCallableStatements\\resources\\Configuration.properties"));
+	private Configuration() {
+		try(FileInputStream fips = new FileInputStream(new File("F:\\BridgeLabzFellowship\\JDBCCRUDCallableStatements\\resources\\Configuration.properties"));){
 			properties.load(fips);
 		}catch(FileNotFoundException fnfe) {
 			logger.error(fnfe);
@@ -70,9 +69,9 @@ public class EmployeeConfiguration {
 		}
 	
 	//SingleTon Lazy Initialization usage to create an configuration object 
-	public static EmployeeConfiguration getConfigurationInstance() {
+	public static Configuration getConfigurationInstance() {
 		if(configuration == null) {
-		configuration = new EmployeeConfiguration();
+		configuration = new Configuration();
 		}
 		return configuration;
 	}
