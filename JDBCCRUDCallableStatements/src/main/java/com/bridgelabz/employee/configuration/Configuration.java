@@ -28,7 +28,6 @@ public class Configuration {
 		}catch(IOException ex) {
 			logger.error(ex);
 		}
-		
 	}
 	
 	//returns the loaded properties object 
