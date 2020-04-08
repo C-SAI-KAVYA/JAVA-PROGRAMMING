@@ -9,8 +9,8 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
 import com.mongodb.client.MongoDatabase;
 
-public class MongoDBConfiguration {
-	Logger logger = Logger.getLogger(MongoDBConfiguration.class);
+public class Configuration {
+	Logger logger = Logger.getLogger(Configuration.class);
 	public MongoDatabase database;
 	private static MongoClient mongoClient;
 
@@ -31,5 +31,10 @@ public class MongoDBConfiguration {
 	public MongoDatabase getDatabase(String databaseName) {
 		database = mongoClient.getDatabase(databaseName);	
 		return database;
+	}
+	public static Configuration getInstance(){
+		if(configuration == null)
+			configuration = new Configuration();
+		return configuration;
 	}
 }
