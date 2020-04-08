@@ -12,10 +12,10 @@ import com.bridgelabz.employeemanagement.utils.InputUtility;
 import com.bridgelabz.employeemanagement.utils.OutputUtility;
 
 public class EmployeeManagementServiceProviderImpl implements EmployeeManagementServiceProvider {
-	EmployeeManagementConfiguration configuration = EmployeeManagementConfiguration.getConfigurationInstance();
-	Properties properties = configuration.getConfiguredPropertyObject();
-	EmployeeManagementRepository repo = new EmployeeManagementRepository(properties.getProperty("TABLENAME"));
-
+	private static EmployeeManagementConfiguration configuration = EmployeeManagementConfiguration.getConfigurationInstance();
+	private static Properties properties = configuration.getConfiguredPropertyObject();
+	private static EmployeeManagementRepository repo = new EmployeeManagementRepository(properties.getProperty("TABLENAME"));
+	EmployeeServceProviderImpl impl;
 	@Override
 	public void insertEmployeeDetails() {
 		logger.info("The table in which you are going to insert is "+properties.getProperty("TABLENAME"));
@@ -159,5 +159,10 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 			logger.info(e);
 		}
 	}
-
+	
+	public static EmployeeServiceProviderImpl getInstance(){
+		if(impl == null)
+			impl = new EmployeeServiceProviderImpl();
+		return impl;
+	}
 }
