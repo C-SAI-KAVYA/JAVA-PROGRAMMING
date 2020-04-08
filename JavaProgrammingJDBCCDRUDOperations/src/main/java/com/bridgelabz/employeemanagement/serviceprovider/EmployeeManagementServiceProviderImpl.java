@@ -17,7 +17,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 	private static EmployeeManagementRepository repo = new EmployeeManagementRepository(properties.getProperty("TABLENAME"));
 	EmployeeServceProviderImpl impl;
 	@Override
-	public void insertEmployeeDetails() {
+	public void register() {
 		logger.info("The table in which you are going to insert is "+properties.getProperty("TABLENAME"));
 		String insertTableQuery = repo.getInsertQuery();
 
@@ -49,7 +49,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 	}
 
 	@Override
-	public void readEmployeeDetailsTable() {
+	public void getEmpDetails() {
 		String readTableQuery = repo.getReadTableQuery();
 		OutputUtility.println(
 				"_________________________________________________________________________________________________");
@@ -77,7 +77,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 	}
 
 	@Override
-	public void readEmployeeDetailsOnID() {
+	public void getEmpDetailsByID() {
 		String readOnIDQuery = repo.getReadTableOnIDQuery();
 	
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
@@ -107,7 +107,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 	}
 
 	@Override
-	public void updateEmployeeDetailsOnID() {
+	public void updateByID() {
 		String updateOnIdQuery = repo.getUpdateOnIDQuery();
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				PreparedStatement preparedStatement = connection.prepareStatement(updateOnIdQuery);) {
@@ -137,7 +137,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 	}
 
 	@Override
-	public void deleteEmployeeDetailsTable() {
+	public void deleteTable() {
 		String deleteTableQuery = repo.getDeleteTableQuery();
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				PreparedStatement preparedStatement = connection.prepareStatement(deleteTableQuery);) {
@@ -149,7 +149,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 	}
 
 	@Override
-	public void deleteEmployeeDetailsOnID() {
+	public void deleteByID() {
 		String deleteDetailsOnIDQuery = repo.getDeleteDetailsOnID();
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				PreparedStatement preparedStatement = connection.prepareStatement(deleteDetailsOnIDQuery);) {
