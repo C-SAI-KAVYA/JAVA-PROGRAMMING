@@ -134,6 +134,7 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 	public static EmployeeServiceProviderImpl getInstance(){
 		if(impl == null)
 			impl = new EmployeeServiceProviderImpl();
+		return impl;
 	}
 
 }
