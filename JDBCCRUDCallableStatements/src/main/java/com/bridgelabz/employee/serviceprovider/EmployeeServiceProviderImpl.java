@@ -28,7 +28,7 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 		try(Connection connection = configuration.connectToDatabaseWithDatabaseName();){
 			CallableStatement callableStatement = connection.prepareCall(insertTableQuery);
 			logger.info("Enter the Employee ID number : ");
-			int iD = InputUtility.intVal();
+			long iD = InputUtility.longVal();
 			logger.info("Enter the Employee First Name : ");
 			String firstName = InputUtility.stringVal();
 			logger.info("Enter the Employee Last Name : ");
@@ -36,13 +36,13 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 			logger.info("Enter the Employee Email ID : ");
 			String email = InputUtility.stringVal();
 			logger.info("Enter the Employee Mobile Number : ");
-			int mobileNumber = InputUtility.intVal();
+			long mobileNumber = InputUtility.longVal();
 
-			callableStatement.setInt(1, iD);
+			callableStatement.setLong(1, iD);
 			callableStatement.setString(2, firstName);
 			callableStatement.setString(3, lastName);
 			callableStatement.setString(4, email);
-			callableStatement.setInt(5, mobileNumber);
+			callableStatement.setLong(5, mobileNumber);
 
 			int noOfRowsAffected = callableStatement.executeUpdate();
 			logger.info("Successfully Inserted and number of rows affected are " + noOfRowsAffected);
@@ -65,14 +65,14 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 			callableStatement.registerOutParameter(6, Types.INTEGER);
 			
 			logger.info("Enter ID whose details you want to read");
-			int iD = InputUtility.intVal(); 
+			long iD = InputUtility.longVal(); 
 			callableStatement.setInt(1, iD);
 		
-			int EmpID = callableStatement.getInt("EmpID");
+			long EmpID = callableStatement.getLong("EmpID");
 			String EmpFirstName = callableStatement.getString("EmpFirstName");
 			String EmpLastName = callableStatement.getString("EmpLastName");
 			String EmpEmail = callableStatement.getString("EmpEmail");
-			int EmpMobileNumber = callableStatement.getInt("EmpMobileNumber");
+			long EmpMobileNumber = callableStatement.getLong("EmpMobileNumber");
 			OutputUtility.println("|\t|" + EmpID + "|\t\t|" + EmpFirstName + "|\t\t|" + EmpLastName + "|\t\t|" + EmpEmail
 					+ "|\t     |" + EmpMobileNumber + "|\t|");
 			OutputUtility.println(
@@ -88,10 +88,10 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				CallableStatement callableStatement = connection.prepareCall(updateOnIdQuery);) {
 			logger.info("Enter the New employee ID whose details you want to update");
-			int iD1 = InputUtility.intVal();
+			long iD1 = InputUtility.longVal();
 			callableStatement.setInt(1, iD1);
 			logger.info("Enter the ID to replace with the old ID");
-			int iD = InputUtility.intVal();
+			long iD = InputUtility.longVal();
 			callableStatement.setInt(2, iD);
 			logger.info("Enter the New Employee first Name to replace with the Old first name");
 			String firstName = InputUtility.stringVal();
@@ -121,7 +121,7 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				CallableStatement callableStatement = connection.prepareCall(deleteDetailsOnIDQuery);) {
 			logger.info("Enter the ID whose details you want to delete");
-			int iD = InputUtility.intVal();
+			long iD = InputUtility.longVal();
 			
 			callableStatement.setInt(1, iD);
 			int noOfRowsAffected = callableStatement.executeUpdate();
