@@ -78,21 +78,21 @@ public interface EmployeeManagementServiceProvider {
 	}
 
 	// abstract method to insert employeeDetails
-	public void insertEmployeeDetails();
+	public void register();
 
 	// abstract method to read employee details
-	public void readEmployeeDetailsTable();
+	public void getEmpDetails();
 
 	// abstract method to read employee details based on employee ID
-	public void readEmployeeDetailsOnID();
+	public void getEmpDetailsOnID();
 
 	// abstract method to update employee details
-	public void updateEmployeeDetailsOnID();
+	public void updateByID();
 
 	// abstract method to delete employee details table
-	public void deleteEmployeeDetailsTable();
+	public void deleteTable();
 
 	// abstract method to delete details of an employee based on key
-	public void deleteEmployeeDetailsOnID();
+	public void deleteDetailsByID();
 
 }
