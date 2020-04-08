@@ -24,7 +24,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				PreparedStatement preparedStatement = connection.prepareStatement(insertTableQuery);) {
 			logger.info("Enter the Employee ID number : ");
-			int iD = InputUtility.intVal();
+			long iD = InputUtility.longVal();
 			logger.info("Enter the Employee First Name : ");
 			String firstName = InputUtility.stringVal();
 			logger.info("Enter the Employee Last Name : ");
@@ -34,7 +34,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 			logger.info("Enter the Employee Mobile Number : ");
 			long mobileNumber = InputUtility.longVal();
 
-			preparedStatement.setInt(1, iD);
+			preparedStatement.setLong(1, iD);
 			preparedStatement.setString(2, firstName);
 			preparedStatement.setString(3, lastName);
 			preparedStatement.setString(4, email);
@@ -60,7 +60,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 				PreparedStatement preparedStatement = connection.prepareStatement(readTableQuery);) {
 			ResultSet rs = preparedStatement.executeQuery();
 			while (rs.next()) {
-				int EmpID = rs.getInt("EmpID");
+				long EmpID = rs.getLong("EmpID");
 				String EmpFirstName = rs.getString("EmpFirstName");
 				String EmpLastName = rs.getString("EmpLastName");
 				String EmpEmail = rs.getString("EmpEmail");
@@ -89,7 +89,7 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 			OutputUtility.println("|\t| EmpID |\t| EmpFirstName |\t| EmpLastName |\t\t| EmpEmail |\t| EmpMobileNumber |\t|");
 			OutputUtility.println(
 						"--------------------------------------------------------------------------------------------------------------");
-			int EmpID = rs.getInt("EmpID");
+			long EmpID = rs.getLong("EmpID");
 			String EmpFirstName = rs.getString("EmpFirstName");
 			String EmpLastName = rs.getString("EmpLastName");
 			String EmpEmail = rs.getString("EmpEmail");
@@ -112,8 +112,8 @@ public class EmployeeManagementServiceProviderImpl implements EmployeeManagement
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				PreparedStatement preparedStatement = connection.prepareStatement(updateOnIdQuery);) {
 			logger.info("Enter the New employee ID to replace with the old");
-			int iD = InputUtility.intVal();
-			preparedStatement.setInt(1, iD);
+			long iD = InputUtility.longVal();
+			preparedStatement.setLong(1, iD);
 			logger.info("Enter the New Employee first Name to replace with the Old first name");
 			String firstName = InputUtility.stringVal();
 			if (!firstName.equalsIgnoreCase(null))
