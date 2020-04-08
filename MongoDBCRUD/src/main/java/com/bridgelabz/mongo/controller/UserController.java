@@ -47,11 +47,11 @@ public class UserController {
 				System.out.println("Enter c");
 				String city = InputUtility.stringVal();
 
-				impl.insertIntoMongoDB(collection, id, userName, email, phoneNumber, city);
+				impl.register(collection, id, userName, email, phoneNumber, city);
 				break;
 
 			case 2:
-				System.out.println(impl.readFromMongoDB(collection));
+				System.out.println(impl.getDetails(collection));
 				break;
 
 			case 3:
@@ -59,7 +59,7 @@ public class UserController {
 				long id1 = InputUtility.intVal();
 				System.out.println("Enter new user name");
 				String newUserName = InputUtility.stringVal();
-				impl.updateMongoDB(collection, newUserName, id1);
+				impl.updateByID(collection, newUserName, id1);
 				break;
 
 			case 4:
