@@ -12,10 +12,14 @@ import com.bridgelabz.employee.utils.InputUtility;
 import com.bridgelabz.employee.utils.OutputUtility;
 
 public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
-	EmployeeConfiguration configuration = EmployeeConfiguration.getConfigurationInstance();
-	Properties properties = configuration.getConfiguredPropertyObject();
-	EmployeeRepository repo = new EmployeeRepository(properties.getProperty("TABLENAME"));
-
+	private static EmployeeConfiguration configuration = EmployeeConfiguration.getConfigurationInstance();
+	private static Properties properties = configuration.getConfiguredPropertyObject();
+	private static EmployeeRepository repo = new EmployeeRepository(properties.getProperty("TABLENAME"));
+	private EmployeeServiceProviderImpl impl;
+	
+	private EmployeeServiceProviderImpl(){
+	
+	}
 	@Override
 	public void insertEmployeeDetails() {
 		logger.info("The table in which you are going to insert is "+properties.getProperty("TABLENAME"));
@@ -125,6 +129,11 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 		} catch (SQLException e) {
 			logger.info(e);
 		}
+	}
+	
+	public static EmployeeServiceProviderImpl getInstance(){
+		if(impl == null)
+			impl = new EmployeeServiceProviderImpl();
 	}
 
 }
