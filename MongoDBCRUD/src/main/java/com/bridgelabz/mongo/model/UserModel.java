@@ -9,7 +9,7 @@ public class UserModel implements Serializable{
 	private String email;
 	private long phoneNumber;
 	private String city;
-	private int id;
+	private long id;
 	
 	public UserModel() {
 
@@ -45,10 +45,10 @@ public class UserModel implements Serializable{
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	@Override
