@@ -1,17 +1,17 @@
 package com.bridgelabz.employee.model;
 
 public class Employee {
-	private int iD;
+	private long iD;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private long mobileNumber;
 	
 	
-	public int getEmpID() {
+	public long getEmpID() {
 		return iD;
 	}
-	public void setID(int empID) {
+	public void setID(long empID) {
 		empID = empID;
 	}
 	public String getFirstName() {
