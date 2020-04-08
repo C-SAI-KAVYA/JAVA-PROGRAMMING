@@ -8,10 +8,12 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import static com.mongodb.client.model.Filters.*;
+
+
 public class UserServiceImpl implements UserService{
 
 	@Override
-	public void insertIntoMongoDB(MongoCollection<UserModel> collection, int id, String userName, String email, long phoneNumber, String city) {
+	public void insertIntoMongoDB(MongoCollection<UserModel> collection, long id, String userName, String email, long phoneNumber, String city) {
 		UserModel userModel = new UserModel();
 		userModel.setId(id);
 		userModel.setUserName(userName);
@@ -52,6 +54,12 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public void deleteDetails(MongoCollection<UserModel> collection, String userName) {
 		collection.deleteOne(eq("userName", userName));
+	}
+	
+	public static UserServiceImpl getInstance(){
+		if(impl == null)
+			impl = new UserServiceProviderImpl();
+		return impl;
 	}
 
 }
