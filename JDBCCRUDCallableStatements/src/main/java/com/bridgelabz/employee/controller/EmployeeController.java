@@ -22,16 +22,16 @@ public class EmployeeController {
 			choice = InputUtility.intVal();
 			switch(choice) {
 				case 1:
-					impl.insertEmployeeDetails();
+					impl.register();
 					break;
 				case 2:
-					impl.readEmployeeDetailsOnID();
+					impl.getEmpDetails();
 					break;
 				case 3:
-					impl.updateEmployeeDetailsOnID();
+					impl.updateByID();
 					break;
 				case 4:
-					impl.deleteEmployeeDetailsOnID();
+					impl.deleteByID();
 					break;
 				case 5:
 					logger.info("Successfully Exited.................................");
