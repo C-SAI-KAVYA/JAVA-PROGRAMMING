@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
 
 
 public class Configuration {
-	private static Logger logger = Logger.getLogger(EmployeeConfiguration.class);
+	private static Logger logger = Logger.getLogger(Configuration.class);
 	private final String filePath = "F:\\BridgeLabzFellowship\\JDBCCRUDCallableStatements\\resources\\Configuration.properties";
 	private static Properties properties = new Properties();
 	private static Connection connection;
