@@ -7,15 +7,15 @@ public interface EmployeeServiceProvider {
 	// default Method an java 8 feature to create database
 	
 	// abstract method to insert employeeDetails
-	public void insertEmployeeDetails();
+	public void register();
 	
 	// abstract method to read employee details based on employee ID
-	public void readEmployeeDetailsOnID();
+	public void getEmpDetails();
 
 	// abstract method to update employee details
-	public void updateEmployeeDetailsOnID();
+	public void updateByID();
 
 	// abstract method to delete details of an employee based on key
-	public void deleteEmployeeDetailsOnID();
+	public void deleteByID();
 
 }
