@@ -28,22 +28,22 @@ public class EmployeeManagementController {
 					impl.createEmployeeDetailsTable();
 					break;
 				case 3:
-					impl.insertEmployeeDetails();
+					impl.register();
 					break;
 				case 4:
-					impl.readEmployeeDetailsOnID();
+					impl.getEmpDetailsByID();
 					break;
 				case 5:
-					impl.readEmployeeDetailsTable();
+					impl.getTableDetails();
 					break;
 				case 6:
-					impl.updateEmployeeDetailsOnID();
+					impl.updateByID();
 					break;
 				case 7:
-					impl.deleteEmployeeDetailsOnID();
+					impl.deleteByID();
 					break;
 				case 8:
-					impl.deleteEmployeeDetailsTable();
+					impl.deleteTable();
 					break;
 				case 9:
 					exit = true;
