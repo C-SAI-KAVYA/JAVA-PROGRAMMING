@@ -9,7 +9,7 @@ import com.bridgelabz.employeemanagement.utils.LogsUtility;
 
 public class EmployeeManagementController {
 	public static void main(String[] args) {
-		EmployeeManagementServiceProviderImpl impl = new EmployeeManagementServiceProviderImpl();
+		EmployeeManagementServiceProviderImpl impl = EmployeeManagementServiceProviderImpl.getInstance();
 		LogsUtility.setLog("EmployeeManagementController");
 		Logger logger = LogsUtility.getLog();
 		System.setProperty("fname", LogsUtility.FILEPATH+"EmployeeManagementController.log");
