@@ -43,7 +43,6 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 			callableStatement.setString(3, lastName);
 			callableStatement.setString(4, email);
 			callableStatement.setLong(5, mobileNumber);
-
 			int noOfRowsAffected = callableStatement.executeUpdate();
 			logger.info("Successfully Inserted and number of rows affected are " + noOfRowsAffected);
 		} catch (SQLException e) {
