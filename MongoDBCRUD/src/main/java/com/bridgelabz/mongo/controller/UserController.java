@@ -37,7 +37,7 @@ public class UserController {
 			switch (choice) {
 			case 1:
 				System.out.println("Enter ID");
-				int id = InputUtility.intVal();
+				long id = InputUtility.longVal();
 				System.out.println("Enter user name");
 				String userName = InputUtility.stringVal();
 				System.out.println("Enter email ");
@@ -56,7 +56,7 @@ public class UserController {
 
 			case 3:
 				System.out.println("Enter ID whose user name you want to change");
-				int id1 = InputUtility.intVal();
+				long id1 = InputUtility.intVal();
 				System.out.println("Enter new user name");
 				String newUserName = InputUtility.stringVal();
 				impl.updateMongoDB(collection, newUserName, id1);
