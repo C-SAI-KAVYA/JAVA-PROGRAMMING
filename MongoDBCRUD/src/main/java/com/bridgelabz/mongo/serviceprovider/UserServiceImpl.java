@@ -12,7 +12,7 @@ import static com.mongodb.client.model.Filters.*;
 public class UserServiceImpl implements UserService{
 
 	@Override
-	public void insertIntoMongoDB(MongoCollection<UserModel> collection, long id, String userName, String email, long phoneNumber, String city) {
+	public void register(MongoCollection<UserModel> collection, long id, String userName, String email, long phoneNumber, String city) {
 		UserModel userModel = new UserModel();
 		userModel.setId(id);
 		userModel.setUserName(userName);
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public List<UserModel> readFromMongoDB(MongoCollection<UserModel> userModelCollection) {
+	public List<UserModel> getDetails(MongoCollection<UserModel> userModelCollection) {
 		FindIterable<UserModel> iterable = userModelCollection.find();
 		MongoCursor<UserModel> cursor = iterable.cursor();
 		List<UserModel> list = new ArrayList<>();
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public void updateMongoDB(MongoCollection<UserModel> collection, String newUserName, long id) {
+	public void updateByID(MongoCollection<UserModel> collection, String newUserName, long id) {
 		FindIterable<UserModel> iterable = collection.find();
 		MongoCursor<UserModel> cursor = iterable.cursor();
 		while(cursor.next().getId() == id)
