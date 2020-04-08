@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public void updateMongoDB(MongoCollection<UserModel> collection, String newUserName, int id) {
+	public void updateMongoDB(MongoCollection<UserModel> collection, String newUserName, long id) {
 		FindIterable<UserModel> iterable = collection.find();
 		MongoCursor<UserModel> cursor = iterable.cursor();
 		while(cursor.next().getId() == id)
