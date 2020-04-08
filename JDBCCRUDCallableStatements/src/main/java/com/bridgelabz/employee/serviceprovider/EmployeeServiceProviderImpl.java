@@ -21,7 +21,7 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 	
 	}
 	@Override
-	public void insertEmployeeDetails() {
+	public void register() {
 		logger.info("The table in which you are going to insert is "+properties.getProperty("TABLENAME"));
 		String insertTableQuery = repo.getInsertQuery();
 
@@ -51,7 +51,7 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 	}
 
 	@Override
-	public void readEmployeeDetailsOnID() {
+	public void getEmpDetails() {
 		String readOnIDQuery = repo.getReadTableOnIDQuery();
 	
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
@@ -82,7 +82,7 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 	}
 
 	@Override
-	public void updateEmployeeDetailsOnID() {
+	public void updateByID() {
 		String updateOnIdQuery = repo.getUpdateOnIDQuery();
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				CallableStatement callableStatement = connection.prepareCall(updateOnIdQuery);) {
@@ -115,7 +115,7 @@ public class EmployeeServiceProviderImpl implements EmployeeServiceProvider {
 	}
 
 	@Override
-	public void deleteEmployeeDetailsOnID() {
+	public void deleteByID() {
 		String deleteDetailsOnIDQuery = repo.getDeleteDetailsOnID();
 		try (Connection connection = configuration.connectToDatabaseWithDatabaseName();
 				CallableStatement callableStatement = connection.prepareCall(deleteDetailsOnIDQuery);) {
